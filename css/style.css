@@ -59,6 +59,29 @@ nav a {
   width: 30px;
   height: 30px;
 }
+/* Style cho phần đăng ký/đăng nhập */
+.register {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.register a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgb(58, 163, 79);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+
+.register a:hover {
+  background-color: rgb(58, 163, 79);
+  transform: scale(1.05);
+}
+
 /* Phần thân trang giới thiệu điểm đến hấp dẫn  trên thế giới*/
 
 .attractive-destinations {
@@ -213,7 +236,7 @@ nav a {
   color: white;
   font-weight: bold;
 }
-
+/* Phần dịch vụ */
 .our-services {
   padding: 60px 20px;
   text-align: center;
@@ -226,13 +249,17 @@ nav a {
 }
 
 .service-cards {
-  display: grid;
+  display: flex;
+  gap : 30px;
   margin: auto;
 }
 
 .card {
   color: rgb(58, 163, 79);
   padding: 25px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
 }
 
 .card:hover {
