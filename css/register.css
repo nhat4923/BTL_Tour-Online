@@ -1,0 +1,79 @@
+/* css phần register */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6600;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e65700;
+}
+.message {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.message a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
