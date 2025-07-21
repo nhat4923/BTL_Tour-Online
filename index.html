@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VNTravel.vn</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -21,7 +20,7 @@
       <div class="logo-header">
         <div class="logo">VNTravel.vn</div>
         <nav>
-          <a href="#">Trang chủ</a>
+          <a href="index.html">Trang chủ</a>
           <a href="#introduce">Giới thiệu</a>
           <a href="#tourTravel">Các tour du lịch</a>
           <a href="#service">Dịch vụ</a>
@@ -39,9 +38,51 @@
       </div>
     </header>
     <!-- Phần thân trang -->
-    <div class="header-img">
-      <img src="vietnam-where-to-go-1_1649584512_1650118878.jpg" alt="" />
-    </div>
+    <section class="attractive-destinations">
+      <h2 class="title">Điểm đến hấp dẫn trên thế giới</h2>
+      <div class="destinations-container">
+        <div class="destination-card item">
+          <a href="page/vietnam.html">
+            <img src="./img/img_diadiem/vietnam.jpg" alt="Hà Nội" />
+            <div class="overlay">
+              <p>Việt Nam: Đất Nước, Con Người và Văn Hóa</p>
+            </div>
+          </a>
+        </div>
+        <div class="destination-card item">
+          <a href="page/hanquoc.html"
+            ><img src="img/img_diadiem/du-lich-han-quoc.jpg" alt="Hàn Quốc" />
+            <div class="overlay">
+              <p>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</p>
+            </div>
+          </a>
+        </div>
+        <div class="destination-card item">
+          <a href="page/thailan.html">
+            <img src="img/img_diadiem/thailan.jpeg" alt="Thái Lan" />
+            <div class="overlay">
+              <p>Thái Lan: Xứ Sở Chùa Vàng và Nụ Cười</p>
+            </div>
+          </a>
+        </div>
+        <div class="destination-card item">
+          <a href="page/trungquoc.html">
+            <img src="img/img_diadiem/trungquoc.jpg" alt="Trung Quốc" />
+            <div class="overlay">
+              <p>Trung Quốc: Đất Nước Cổ Kính và Hiện Đại</p>
+            </div>
+          </a>
+        </div>
+        <div class="destination-card item">
+          <a href="page/singapo.html">
+            <img src="img/img_diadiem/singapo.jpeg" alt="Singapore" />
+            <div class="overlay">
+              <p>Singapore: Thành Phố Sư Tử Xanh và Sạch</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
     <section class="intro-section" id="introduce">
       <div class="intro-text">
         <h2>Khám phá du lịch cùng chúng tôi</h2>

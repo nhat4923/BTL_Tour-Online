@@ -1,65 +1,118 @@
 * {
-  margin: 0;                
-  padding: 0;               
-  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .navbar {
-  display: flex;                  
-  align-items: center;          
-  justify-content: space-between; 
-  padding: 15px 30px;          
-  background-color: #ffffff;    
-  color: #000000;               
-  opacity: 0.9;                  
-  position: fixed;              
-  width: 100%;                 
-  z-index: 1;                   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo-header {
-  display: flex;             
-  align-items: center;     
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  color: rgb(58, 163, 79);            
-  font-weight: bold;         
-  font-size: 24px;          
+  color: rgb(58, 163, 79);
+  font-weight: bold;
+  font-size: 24px;
 }
 
 nav a {
-  padding: 14px;             
-  text-decoration: none;    
-  color: rgb(0, 0, 0);              
-  font-size: 14px;         
+  padding: 14px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
 }
 
 .icons {
-  display: flex;          
-  align-items: center;       
-  gap: 15px;                 
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .icons i {
-  font-size: 20px;         
-  color: #000000;            
+  font-size: 20px;
+  color: #000000;
 }
 
 .icons .avatar {
-  width: 30px;               
-  border-radius: 4px;       
+  width: 30px;
+  border-radius: 4px;
 }
 
 .icon_img {
-  width: 30px;           
-  height: 30px;              
+  width: 30px;
+  height: 30px;
 }
-/* Phần thân trang */
+/* Phần thân trang giới thiệu điểm đến hấp dẫn  trên thế giới*/
+
+.attractive-destinations {
+  margin-top: 50px;
+  padding: 40px 20px;
+}
+.title {
+  font-size: 36px;
+  color: rgb(58, 163, 79);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.destinations-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destination-card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.destination-card:hover img {
+  transform: scale(1.03); /* phóng to thêm 3% */
+}
+.destination-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*  */
 .intro-section {
   padding: 80px 20px;
   background: #fff;
@@ -84,90 +137,85 @@ nav a {
   margin-bottom: 15px;
 }
 .header-img img {
-  width: 100%;               
+  width: 100%;
   height: 100%;
-  overflow: hidden;        
+  overflow: hidden;
 }
 
 .banner img {
-  width: 100%;               
-  height: 90vh;              
-  object-fit: cover;       
-  margin-top: 60px;       
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  margin-top: 60px;
 }
 
-.foreign-tour-section {               
-  padding: 40px 20px;                 
-  background-color: #fff;            
+.foreign-tour-section {
+  padding: 40px 20px;
 }
 
 .foreign-tour-section h2 {
-  text-align: center;             
-  color: rgb(58, 163, 79);        
-  font-size: 28px;                  
-  margin-bottom: 30px;             
+  text-align: center;
+  color: rgb(58, 163, 79);
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .foreign-tour-list {
-  display: flex;                    
-  gap: 25px;                     
-  max-width: 1200px;           
-  margin: auto;    
-  flex-wrap: wrap;                
+  display: flex;
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .foreign-tour-item {
-    width: calc(25% - 20px);
-  background-color: white;        
-  border: 1px solid #e0e0e0;    
-  border-radius: 10px;             
-  text-align: center;              
-  padding: 15px;                   
-  transition: transform 0.3s;      
+  width: calc(25% - 20px);
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
 }
 
 .foreign-tour-item:hover {
-  transform: translateY(-5px);     
+  transform: translateY(-5px);
 }
 
 .foreign-tour-item img {
-  width: 100%;                    
-  height: 180px;               
-  object-fit: cover;               
-  border-radius: 8px;          
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .foreign-tour-item h3 {
-  color: rgb(58, 163, 79);              
-  margin: 15px 0 5px;      
+  color: rgb(58, 163, 79);
+  margin: 15px 0 5px;
 }
 
 .foreign-tour-price {
-  color: red;                  
-  font-weight: bold;              
-  margin: 5px 0;              
+  color: red;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .foreign-tour-destination {
-  color: #333;                   
-  margin-bottom: 15px;          
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .foreign-tour-item button {
-  padding: 8px 18px;             
-  border: none;                    
-  border-radius: 20px;           
-  background-color: rgb(58, 163, 79);   
-  color: white;                 
-  font-weight: bold;              
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(58, 163, 79);
+  color: white;
+  font-weight: bold;
 }
-
-
-
 
 .our-services {
   padding: 60px 20px;
-  background: #ffffff;
   text-align: center;
 }
 
@@ -183,9 +231,8 @@ nav a {
 }
 
 .card {
-  background-color: #ffffff;
+  color: rgb(58, 163, 79);
   padding: 25px;
-  
 }
 
 .card:hover {
@@ -194,48 +241,46 @@ nav a {
 
 /* Phần chân trang  */
 .footer {
-  margin-top: 15px;          
-  display: flex;             
-  justify-content: center;  
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-content {
-  width: 800px;              
+  width: 800px;
 }
 
 .footer-icon {
-  display: flex;             
+  display: flex;
 }
 
 .footer-icon i {
-  color: rgb(58, 163, 79);              
-  padding: 16px;            
-  font-size: 20px;          
+  color: rgb(58, 163, 79);
+  padding: 16px;
+  font-size: 20px;
 }
 
 .button button {
-  margin-top: 15px;         
-  width: 140px;             
-  height: 40px;              
-  border: 1px solid #fff;    
-  color: #000000;             
+  margin-top: 15px;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #fff;
+  color: #000000;
   background-color: transparent;
 }
 
 .footer-description {
-  display: flex;            
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .description_link {
-  display: flex;            
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
 }
 
 .description_link a {
-  color: rgb(58, 163, 79);             
-  text-decoration: none;    
-  padding: 12px;           
+  color: rgb(58, 163, 79);
+  text-decoration: none;
+  padding: 12px;
 }
-
-
