@@ -28,7 +28,12 @@
        </div>
         <button type="submit">Đăng ký</button>
         <p class="message">
+<<<<<<< HEAD
           Đã có tài khoản? <a href="../manager/login.php">Đăng nhập</a>  <a href="../index.php">Trang chủ</a>
+=======
+          Đã có tài khoản? <a href="/manager/login.html">Đăng nhập</a>
+          <a href="../index.html">Trang chủ</a>
+>>>>>>> d610361945168ccc7accd2bfa48fac5c027a81e6
         </p>
       </form>
     </div>

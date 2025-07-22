@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng nhập</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/login.css">
+=======
+    <link rel="stylesheet" href="../css/login.css" />
+>>>>>>> d610361945168ccc7accd2bfa48fac5c027a81e6
   </head>
   <body>
     <div class="login-container">
@@ -20,9 +24,15 @@
         </div>
         <button type="submit">Đăng nhập</button>
         <p class="message">
+<<<<<<< HEAD
           Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
         <a href="../index.php">Trang chủ</a>
+=======
+          Chưa có tài khoản? <a href="manager/register.html">Đăng ký</a>
+        </p>
+        <a href="../index.html">Trang chủ</a>
+>>>>>>> d610361945168ccc7accd2bfa48fac5c027a81e6
       </form>
     </div>
   </body>

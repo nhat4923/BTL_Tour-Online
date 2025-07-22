@@ -74,7 +74,6 @@ nav a {
   color: white;
   font-weight: bold;
   font-size: 14px;
-  
 }
 
 .register a:hover {
@@ -135,10 +134,9 @@ nav a {
   text-align: center;
 }
 
-/*  */
+/* css khám phá du lịch */
 .intro-section {
   padding: 80px 20px;
-  background: #fff;
 }
 
 .intro-text {
@@ -250,7 +248,7 @@ nav a {
 
 .service-cards {
   display: flex;
-  gap : 30px;
+  gap: 30px;
   margin: auto;
 }
 
