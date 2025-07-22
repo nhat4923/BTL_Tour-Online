@@ -1,4 +1,4 @@
-/* css phần register */
+/* css phần login */
 body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(to right, #ffecd2, #fcb69f);
@@ -12,7 +12,7 @@ body {
   background: #fff;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 400px;
 }
