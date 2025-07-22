@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset mặc định */
 * {
   margin: 0;
@@ -5,6 +6,9 @@
   box-sizing: border-box;
 }
 
+=======
+/* css phần login */
+>>>>>>> 80b7bde6049f9ecc0a95a19673ec0bd12aa15d46
 body {
   font-family: "Segoe UI", sans-serif;
   background: rgb(58, 163, 79);
@@ -18,8 +22,14 @@ body {
 .login-container {
   background: #fff;
   padding: 40px 30px;
+<<<<<<< HEAD
   border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+=======
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+>>>>>>> 80b7bde6049f9ecc0a95a19673ec0bd12aa15d46
   max-width: 400px;
   width: 100%;
 }
@@ -93,6 +103,7 @@ button:hover {
 .message a:hover {
   text-decoration: underline;
 }
+<<<<<<< HEAD
 
 /* Link về trang chủ */
 .login-form a[href*="index.php"] {
@@ -107,3 +118,5 @@ button:hover {
 .login-form a[href*="index.php"]:hover {
   text-decoration: underline;
 }
+=======
+>>>>>>> 80b7bde6049f9ecc0a95a19673ec0bd12aa15d46
