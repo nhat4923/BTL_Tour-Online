@@ -28,12 +28,7 @@
        </div>
         <button type="submit">Đăng ký</button>
         <p class="message">
-<<<<<<< HEAD:manager/register.php
           Đã có tài khoản? <a href="../manager/login.php">Đăng nhập</a>  <a href="../index.php">Trang chủ</a>
-=======
-          Đã có tài khoản? <a href="../manager/login.html">Đăng nhập</a>
-          <a href="../index.html">Trang chủ</a>
->>>>>>> 80b7bde6049f9ecc0a95a19673ec0bd12aa15d46:manager/register.html
         </p>
       </form>
     </div>

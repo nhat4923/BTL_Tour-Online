@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VNTravel.vn</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,19 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
   </head>
-
-<<<<<<< HEAD:index.php
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VNTravel.vn</title>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
 <body>
   <!-- Phần đầu trang -->
   <header class="navbar">
@@ -44,31 +31,9 @@
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-bell"></i>
       <div class="register">
-        <a href="manager/login.php">Đăng nhập</a>
-        <a href="manager/register.php">Đăng kí</a>
-=======
-  <body>
-    <!-- Phần đầu trang -->
-    <header class="navbar">
-      <div class="logo-header">
-        <div class="logo">VNTravel.vn</div>
-        <nav>
-          <a href="index.html">Trang chủ</a>
-          <a href="#introduce">Giới thiệu</a>
-          <a href="#tourTravel">Các tour du lịch</a>
-          <a href="#service">Dịch vụ</a>
-          <a href="#">Liên hệ</a>
-        </nav>
->>>>>>> 80b7bde6049f9ecc0a95a19673ec0bd12aa15d46:index.html
+        <a href="../manager/login.php">Đăng nhập</a>
+        <a href="../manager/register.php">Đăng kí</a>
       </div>
-      <div class="icons">
-        <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell"></i>
-        <div class="register">
-          <a href="./manager/login.html">Đăng nhập</a>
-          <a href="./manager/register.html">Đăng kí</a>
-        </div>
       </div>
     </header>
     <!-- Phần thân trang -->
