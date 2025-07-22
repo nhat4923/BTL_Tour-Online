@@ -1,20 +1,26 @@
-/* css phần register */
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
-  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background:rgb(58, 163, 79);
+  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .register-container {
-  background: #fff;
+  background: #ffffff;
   padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   max-width: 400px;
+  width: 100%;
 }
 
 .register-form h2 {
@@ -29,49 +35,75 @@ body {
 
 .input-group label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-weight: 600;
-  color: #444;
+  color: #333;
 }
 
 .input-group input {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 16px;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .input-group input:focus {
-  border-color: #ff6600;
+  border-color: rgb(58, 163, 79);
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.4);
   outline: none;
 }
 
+/* Style cho select */
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: rgb(58, 163, 79);
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.4);
+  outline: none;
+}
+
+/* Nút đăng ký */
 button {
   width: 100%;
   padding: 14px;
-  background: #ff6600;
-  color: #fff;
+  background:rgb(58, 163, 79)0;
+  color: white;
   font-size: 16px;
+  font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #e65700;
+  background: rgb(58, 163, 79);
 }
+
+/* Liên kết dưới form */
 .message {
   text-align: center;
   margin-top: 16px;
   font-size: 14px;
+  color: #333;
 }
 
 .message a {
-  color: #ff6600;
+  color:rgb(58, 163, 79);
   text-decoration: none;
+  font-weight: 500;
+  margin: 0 4px;
 }
 
 .message a:hover {

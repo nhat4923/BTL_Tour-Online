@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng nhập</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
   </head>
   <body>
     <div class="login-container">
-      <form class="login-form">
+      <form class="login-form"  action="login.php" method="POST">
         <h2>Đăng nhập</h2>
         <div class="input-group">
           <label for="username">Tên đăng nhập</label>
@@ -20,9 +20,9 @@
         </div>
         <button type="submit">Đăng nhập</button>
         <p class="message">
-          Chưa có tài khoản? <a href="register.html">Đăng ký</a>
+          Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
-        <a href="/index.html">Trang chủ</a>
+        <a href="../index.php">Trang chủ</a>
       </form>
     </div>
   </body>

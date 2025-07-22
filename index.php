@@ -30,8 +30,8 @@
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-bell"></i>
       <div class="register">
-        <a href="/manager/login.html">Đăng nhập</a>
-        <a href="/manager/register.html">Đăng kí</a>
+        <a href="manager/login.php">Đăng nhập</a>
+        <a href="manager/register.php">Đăng kí</a>
       </div>
     </div>
   </header>
