@@ -32,8 +32,8 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-bell"></i>
         <div class="register">
-          <a href="manager/login.php">Đăng nhập</a>
-          <a href="manager/register.php">Đăng kí</a>
+          <a href="./manager/login.php">Đăng nhập</a>
+          <a href="./manager/register.php">Đăng kí</a>
         </div>
       </div>
     </header>
@@ -86,18 +86,19 @@
     <section class="intro-section" id="introduce">
       <div class="intro-text">
         <h2>Khám phá du lịch cùng chúng tôi</h2>
-        <p>
+        <p class="intro-content">
           Chúng tôi là đơn vị hàng đầu trong lĩnh vực tổ chức tour du lịch nội
           địa và quốc tế. Với sứ mệnh mang đến những trải nghiệm đáng nhớ, mỗi
           hành trình của bạn sẽ được thiết kế tỉ mỉ và đầy cảm hứng.
         </p>
-        <p>
+        <p class="intro-content">
           Đội ngũ hướng dẫn viên chuyên nghiệp, lộ trình linh hoạt và dịch vụ
           tận tâm là những gì chúng tôi cam kết để mang lại sự hài lòng tuyệt
           đối cho khách hàng.
         </p>
       </div>
     </section>
+    <!-- Tour trong nước -->
     <div class="foreign-tour-section" id="tourTravel">
       <h2><i class="fa-solid fa-plane-departure"></i> TOUR TRONG NƯỚC</h2>
       <div class="foreign-tour-list">
@@ -132,10 +133,22 @@
           <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
           <button>ĐẶT NGAY</button>
         </div>
+        <div class="foreign-tour-item">
+          <img src="img/dn.jpg" alt="Tour Đà Nẵng" />
+          <h3>Tour Đà Nẵng 6N5Đ</h3>
+          <p class="foreign-tour-price">22,000,000đ</p>
+          <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
+          <button>ĐẶT NGAY</button>
+        </div>
+        <div class="foreign-tour-item">
+          <img src="img/dn.jpg" alt="Tour Đà Nẵng" />
+          <h3>Tour Đà Nẵng 6N5Đ</h3>
+          <p class="foreign-tour-price">22,000,000đ</p>
+          <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
+          <button>ĐẶT NGAY</button>
+        </div>
       </div>
-      <br />
-      <br />
-      <br />
+    <!-- Tour nước ngoài -->
       <h2><i class="fa-solid fa-plane-departure"></i> TOUR NƯỚC NGOÀI</h2>
       <div class="foreign-tour-list">
         <div class="foreign-tour-item">
@@ -171,7 +184,7 @@
         </div>
       </div>
     </div>
-
+ <!-- Phần dịch vụ -->
     <div class="our-services" id="service">
       <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
       <div class="service-cards">
