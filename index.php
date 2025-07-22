@@ -149,7 +149,7 @@
         </div>
       </div>
     <!-- Tour nước ngoài -->
-      <h2><i class="fa-solid fa-plane-departure"></i> TOUR NƯỚC NGOÀI</h2>
+      <h2 style="margin-top: 15px;"><i class="fa-solid fa-plane-departure"></i> TOUR NƯỚC NGOÀI</h2>
       <div class="foreign-tour-list">
         <div class="foreign-tour-item">
           <img src="img/4.jpg" alt="Tour Úc" />
