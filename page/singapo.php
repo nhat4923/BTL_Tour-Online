@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khám phá Thái Lan</title>
+    <title>Khám phá Singapore</title>
 </head>
  <style>
         body {
@@ -83,7 +83,7 @@ nav a {
 }
 .title {
     margin-top: 69px;
-    background-color: #FF0000;  
+     background-color: #27c141;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -93,7 +93,7 @@ nav a {
     margin: 0;
     font-size: 2.5em;
 }
-  .container {
+        .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
@@ -109,8 +109,8 @@ nav a {
         }
 
         .section h2 {
-            color: #000080; /* Màu xanh đậm (Navy) tương ứng với màu xanh trên cờ Thái */
-            border-bottom: 2px solid #000080;
+            color: #008000;
+            border-bottom: 2px solid #008000;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -128,21 +128,11 @@ nav a {
         }
 
         .section ul li {
-            background: #ffe6e6; /* Màu hồng nhạt */
+            background: #f0f8ff;
             margin-bottom: 8px;
             padding: 10px;
-            border-left: 5px solid #FF0000; /* Đường viền đỏ */
+            border-left: 5px solid #EE2737; 
             border-radius: 3px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
 footer {
@@ -161,7 +151,7 @@ footer {
       <div class="logo-header">
         <div class="logo">VNTravel.vn</div>
         <nav>
-          <a href="../index.html">Trang chủ</a>
+          <a href="../index.php">Trang chủ</a>
           <a href="#introduce">Giới thiệu</a>
           <a href="#tourTravel">Các tour du lịch</a>
           <a href="#service">Dịch vụ</a>
@@ -170,54 +160,56 @@ footer {
       </div>
       <div class="icons">
         <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell"></i>
+        <i class="search fa-solid fa-magnifying-glass"></i>
+        <i class="bell fa-solid fa-bell"></i>
         <div class="register">
-          <a href="/manager/login.html">Đăng nhập</a>
-          <a href="/manager/register.html">Đăng kí</a>
+          <a href="/manager/login.php">Đăng nhập</a>
+          <a href="/manager/register.php">Đăng kí</a>
         </div>
       </div>
     </header>
      <div class="title">
-         <h1>Thái Lan: Xứ Sở Chùa Vàng và Nụ Cười</h1>
+         <h1>Singapore: Thành Phố Sư Tử Xanh và Sạch</h1>
     </div>
-    <div class="container">
+
+     <div class="container">
         <section class="section">
             <h2>Giới thiệu chung</h2>
-            <p>Thái Lan, quốc gia nằm ở trung tâm Đông Nam Á, nổi tiếng với biệt danh "Xứ sở chùa vàng" hay "Đất nước của những nụ cười". Với nền văn hóa Phật giáo đậm đà, những ngôi chùa cổ kính, bãi biển tuyệt đẹp và ẩm thực đường phố phong phú, Thái Lan luôn là điểm đến hấp dẫn du khách quốc tế.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZ4A9MSa4E1No6C9zHBrMGSLkhGkgfVYkQw&s" alt="Chùa Vàng Thái Lan">
-            <p>Từ thủ đô Bangkok sôi động đến những hòn đảo thiên đường, Thái Lan mang đến những trải nghiệm đa dạng, từ phiêu lưu khám phá đến nghỉ dưỡng thư giãn.</p>
+            <p>Singapore, một quốc đảo nhỏ bé nhưng vô cùng phát triển ở Đông Nam Á, được mệnh danh là "Thành phố sư tử" hay "Quốc đảo xanh". Nổi tiếng với sự sạch sẽ, an toàn, kiến trúc hiện đại và hệ thống cây xanh dày đặc, Singapore là một trong những trung tâm kinh tế, tài chính và du lịch hàng đầu thế giới.</p>
+            <img src="https://safdie-staging.imgix.net/b27da03b-d334-4049-ba75-e3679385cb13/01_B-F_MBS-HS_16_SandsSP_4x3.jpg?auto=format%2Ccompress&q=50&ixlib=imgixjs-3.5.1" alt="Marina Bay Sands">
+            <p>Dù có diện tích khiêm tốn, Singapore vẫn mang đến những trải nghiệm đa dạng, từ ẩm thực đường phố độc đáo đến những khu vườn nhân tạo kỳ vĩ và các khu mua sắm sầm uất.</p>
         </section>
 
         <section class="section">
             <h2>Các điểm đến nổi bật</h2>
             <ul>
-                <li><strong>Bangkok:</strong> Thủ đô sầm uất với Chùa Phật Ngọc (Wat Phra Kaew), Cung điện Hoàng gia, chợ nổi và các trung tâm mua sắm hiện đại.</li>
-                <li><strong>Chiang Mai:</strong> "Đóa hồng phương Bắc" với những ngôi chùa cổ kính, trải nghiệm du lịch sinh thái và văn hóa bản địa độc đáo.</li>
-                <li><strong>Phuket:</strong> Đảo lớn nhất Thái Lan, nổi tiếng với những bãi biển cát trắng, nước biển trong xanh và các hoạt động thể thao dưới nước.</li>
-                <li><strong>Pattaya:</strong> Thành phố biển sôi động với các khu nghỉ dưỡng, hoạt động giải trí đêm và công viên nước.</li>
-                <li><strong>Krabi:</strong> Tỉnh ven biển với những vách đá vôi ấn tượng, bãi biển Railay và các đảo đẹp như Koh Phi Phi.</li>
-                <li><strong>Ayutthaya:</strong> Cố đô của Thái Lan, nơi lưu giữ nhiều tàn tích của các ngôi chùa và cung điện cổ xưa được UNESCO công nhận.</li>
+                <li><strong>Marina Bay Sands:</strong> Tổ hợp nghỉ dưỡng sang trọng với kiến trúc độc đáo, bể bơi vô cực trên tầng thượng và trung tâm mua sắm.</li>
+                <li><strong>Gardens by the Bay:</strong> Khu vườn nhân tạo với các "Siêu cây" (Supertrees) khổng lồ, Cloud Forest và Flower Dome.</li>
+                <li><strong>Sentosa Island:</strong> Hòn đảo giải trí với Universal Studios Singapore, S.E.A. Aquarium và nhiều bãi biển nhân tạo.</li>
+                <li><strong>Clarke Quay:</strong> Khu vực ven sông sôi động với các nhà hàng, quán bar và hoạt động giải trí về đêm.</li>
+                <li><strong>Chinatown và Little India:</strong> Khu phố cổ mang đậm bản sắc văn hóa của các cộng đồng dân cư lớn tại Singapore.</li>
+                <li><strong>Jewel Changi Airport:</strong> Một công trình kiến trúc ấn tượng ngay tại sân bay với thác nước trong nhà cao nhất thế giới và khu vườn xanh mát.</li>
             </ul>
-            <img src="https://viettourist.com/resources/images/BLOG-PIC/Blog-thai-lan/banana-rock-beach.jpg" alt="Bãi biển Phuket">
+            <img src="https://media.vietravel.com/images/Content/Visiting-Gardens-by-the-Bay-Singapore.jpg" alt="Gardens by the Bay">
         </section>
 
         <section class="section">
-            <h2>Ẩm thực Thái Lan</h2>
-            <p>Ẩm thực Thái Lan nổi tiếng thế giới với hương vị chua, cay, mặn, ngọt hòa quyện một cách tinh tế. Các món ăn thường sử dụng nhiều loại thảo mộc và gia vị tươi.</p>
+            <h2>Ẩm thực Singapore</h2>
+            <p>Ẩm thực Singapore là sự pha trộn đa dạng của các nền văn hóa Mã Lai, Trung Quốc, Ấn Độ và phương Tây, tạo nên những hương vị độc đáo và khó quên. Bạn không thể bỏ lỡ:</p>
             <ul>
-                <li><strong>Pad Thái:</strong> Món mì xào quốc dân, với hương vị đặc trưng từ tôm, đậu phụ, giá đỗ và nước sốt me.</li>
-                <li><strong>Tom Yum Goong:</strong> Canh tôm chua cay, thơm lừng mùi sả, riềng, lá chanh và ớt.</li>
-                <li><strong>Cà ri xanh (Green Curry):</strong> Món cà ri với nước cốt dừa béo ngậy, vị cay nhẹ và hương thơm của rau thơm.</li>
-                <li><strong>Xôi xoài (Mango Sticky Rice):</strong> Món tráng miệng nổi tiếng với xoài tươi, xôi dẻo và nước cốt dừa.</li>
-                <li><strong>Gỏi đu đủ (Som Tum):</strong> Món gỏi trộn chua cay, thanh mát, là đặc sản của vùng Isan.</li>
-                <li><strong>Thịt xiên nướng (Moo Ping):</strong> Thịt heo tẩm ướp nướng thơm lừng, món ăn đường phố rất được yêu thích.</li>
+                <li><strong>Cua sốt ớt (Chilli Crab):</strong> Món cua tươi ngon với nước sốt cay nồng đặc trưng, thường được ăn kèm bánh bao.</li>
+                <li><strong>Cơm gà Hải Nam (Hainanese Chicken Rice):</strong> Món ăn đơn giản nhưng tinh tế với cơm nấu bằng nước luộc gà, thịt gà mềm và các loại nước chấm.</li>
+                <li><strong>Laksa:</strong> Món mì nước cốt dừa cay nồng, đậm đà hương vị hải sản hoặc thịt gà.</li>
+                <li><strong>Char Kway Teow:</strong> Mì dẹt xào với hải sản, trứng, giá đỗ và chả cá, có hương vị khói đặc trưng.</li>
+                <li><strong>Satay:</strong> Xiên thịt nướng (gà, bò, cừu) ăn kèm sốt đậu phộng béo ngậy.</li>
+                <li><strong>Ice Kacang:</strong> Món tráng miệng giải nhiệt với đá bào, đậu đỏ, ngô, thạch và siro đủ màu sắc.</li>
             </ul>
-            <img src="https://hoctiengthai.com/uploads/images/padthainettinh-tuycuaamthuc-thai.jpg" alt="Pad Thái">
+            <img src="https://pystravel.vn/uploads/posts/albums/3157/56da1cdef05eccc3c7bc2a9e1bef1a6a.jpg" alt="Cua sốt ớt Singapore">
         </section>
     </div>
+
     <footer>
-        <p>&copy; 2025 Khám phá Thái Lan. Mọi quyền được bảo lưu.</p>
+        <p>&copy; 2025 Khám phá Singapore. Mọi quyền được bảo lưu.</p>
     </footer>
     <script>
         var chedo = true;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khám phá Việt Nam</title>
+    <title>Khám phá Hàn Quốc</title>
 </head>
  <style>
         body {
@@ -150,7 +150,7 @@ footer {
       <div class="logo-header">
         <div class="logo">VNTravel.vn</div>
         <nav>
-          <a href="../index.html">Trang chủ</a>
+          <a href="../index.php">Trang chủ</a>
           <a href="#introduce">Giới thiệu</a>
           <a href="#tourTravel">Các tour du lịch</a>
           <a href="#service">Dịch vụ</a>
@@ -162,8 +162,8 @@ footer {
         <i class="search fa-solid fa-magnifying-glass"></i>
         <i class="bell fa-solid fa-bell"></i>
         <div class="register">
-          <a href="/manager/login.html">Đăng nhập</a>
-          <a href="/manager/register.html">Đăng kí</a>
+          <a href="/manager/login.php">Đăng nhập</a>
+          <a href="/manager/register.php">Đăng kí</a>
         </div>
       </div>
     </header>
@@ -175,7 +175,7 @@ footer {
         <section class="section">
             <h2>Giới thiệu chung</h2>
             <p>Hàn Quốc, hay Đại Hàn Dân Quốc, là một quốc gia nằm ở phía Nam bán đảo Triều Tiên. Nổi tiếng với sự kết hợp hài hòa giữa lịch sử lâu đời, văn hóa truyền thống phong phú và sự phát triển công nghệ vượt bậc, Hàn Quốc đã trở thành một điểm đến hấp dẫn du khách từ khắp nơi trên thế giới.</p>
-            <img src="https://via.placeholder.com/600x300?text=Cung+điện+Gyeongbokgung" alt="Cung điện Gyeongbokgung">
+            <img src="https://idcedu.com.vn/wp-content/uploads/2021/01/Cung-Gyeongbokgung-3-1536x1009.jpg" alt="Cung điện Gyeongbokgung">
             <p>Từ những cung điện cổ kính, làng nghề truyền thống đến những thành phố hiện đại sầm uất, Hàn Quốc mang đến những trải nghiệm đa dạng cho mọi du khách.</p>
         </section>
 
@@ -189,7 +189,7 @@ footer {
                 <li><strong>Núi Seoraksan:</strong> Một trong những ngọn núi đẹp nhất Hàn Quốc, nổi tiếng với cảnh quan ngoạn mục vào mùa thu.</li>
                 <li><strong>Jeonju:</strong> Thành phố ẩm thực với làng Hanok Jeonju truyền thống, nơi du khách có thể trải nghiệm văn hóa truyền thống và thưởng thức ẩm thực địa phương.</li>
             </ul>
-            <img src="https://via.placeholder.com/600x300?text=Tháp+N+Seoul" alt="Tháp N Seoul">
+            <img src="https://www.dulichhoanmy.com/wp-content/uploads/2022/11/thap-n-seoul-han-quoc.jpg" alt="Tháp N Seoul">
         </section>
 
         <section class="section">
@@ -203,7 +203,7 @@ footer {
                 <li><strong>Samgyeopsal:</strong> Thịt ba chỉ nướng, thường được cuộn trong rau xà lách và ăn kèm tỏi, ớt.</li>
                 <li><strong>Japchae:</strong> Miến trộn rau củ và thịt, có hương vị thanh đạm, thơm ngon.</li>
             </ul>
-            <img src="https://via.placeholder.com/600x300?text=Bibimbap" alt="Bibimbap">
+            <img src="https://www.thespruceeats.com/thmb/4Qckb9A9KGyG-q_czTZieMWCGgk=/2048x1367/filters:fill(auto,1)/classic-korean-bibimbap-recipe-2118765_20_preview-5b1ee284ba61770037c8ad38.jpeg" alt="Bibimbap">
         </section>
     </div>
 

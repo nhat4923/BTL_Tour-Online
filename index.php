@@ -42,7 +42,7 @@
       <h2 class="title">Điểm đến hấp dẫn trên thế giới</h2>
       <div class="destinations-container">
         <div class="destination-card item">
-          <a href="page/vietnam.html">
+          <a href="page/vietnam.php">
             <img src="./img/img_diadiem/vietnam.jpg" alt="Hà Nội" />
             <div class="overlay">
               <p>Việt Nam: Đất Nước, Con Người và Văn Hóa</p>
@@ -50,7 +50,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/hanquoc.html"
+          <a href="page/hanquoc.php"
             ><img src="img/img_diadiem/du-lich-han-quoc.jpg" alt="Hàn Quốc" />
             <div class="overlay">
               <p>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</p>
@@ -58,7 +58,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/thailan.html">
+          <a href="page/thailan.php">
             <img src="img/img_diadiem/thailan.jpeg" alt="Thái Lan" />
             <div class="overlay">
               <p>Thái Lan: Xứ Sở Chùa Vàng và Nụ Cười</p>
@@ -66,7 +66,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/trungquoc.html">
+          <a href="page/trungquoc.php">
             <img src="img/img_diadiem/trungquoc.jpg" alt="Trung Quốc" />
             <div class="overlay">
               <p>Trung Quốc: Đất Nước Cổ Kính và Hiện Đại</p>
@@ -74,7 +74,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/singapo.html">
+          <a href="page/singapo.php">
             <img src="img/img_diadiem/singapo.jpeg" alt="Singapore" />
             <div class="overlay">
               <p>Singapore: Thành Phố Sư Tử Xanh và Sạch</p>

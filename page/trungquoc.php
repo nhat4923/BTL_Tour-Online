@@ -151,7 +151,7 @@ footer {
       <div class="logo-header">
         <div class="logo">VNTravel.vn</div>
         <nav>
-          <a href="../index.html">Trang chủ</a>
+          <a href="../index.php">Trang chủ</a>
           <a href="#introduce">Giới thiệu</a>
           <a href="#tourTravel">Các tour du lịch</a>
           <a href="#service">Dịch vụ</a>
@@ -163,8 +163,8 @@ footer {
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-bell"></i>
         <div class="register">
-          <a href="/manager/login.html">Đăng nhập</a>
-          <a href="/manager/register.html">Đăng kí</a>
+          <a href="/manager/login.php">Đăng nhập</a>
+          <a href="/manager/register.php">Đăng kí</a>
         </div>
       </div>
     </header>
