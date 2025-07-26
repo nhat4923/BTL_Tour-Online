@@ -217,6 +217,11 @@ nav a {
   color: rgb(58, 163, 79);
   margin: 15px 0 5px;
 }
+.foreign-tour-item .btn a{
+  text-decoration: none;
+  color: #fff;
+
+}
 
 .foreign-tour-price {
   color: red;

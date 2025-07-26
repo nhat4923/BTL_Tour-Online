@@ -1,3 +1,10 @@
+<?php
+  include('connect.php');
+  $tours_vn = $conn->query("SELECT * FROM tours WHERE type = 'Trong nước' ORDER BY id DESC");
+  $tours_foreign = $conn->query("SELECT * FROM tours WHERE type = 'Nước ngoài' ORDER BY id DESC");
+?>
+
+
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -126,87 +133,40 @@
   <div class="foreign-tour-section" id="tourTravel">
     <h2><i class="fa-solid fa-plane-departure"></i> TOUR TRONG NƯỚC</h2>
     <div class="foreign-tour-list">
+    <?php
+        while ($row = $tours_vn->fetch_assoc()):
+    ?>
       <div class="foreign-tour-item">
-        <img src="img/hn.jpg" alt="Tour Hà Nội" />
-        <h3>Tour Hà Nội 7N6Đ</h3>
-        <p class="foreign-tour-price">31,500,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Thủ đô HÀ Nội</p>
-        <button>ĐẶT NGAY</button>
+        <img src="<?= $row['image_url'] ?>" alt="Tour Hà Nội" />
+        <h3><?= $row['name'] ?></h3>
+        <p class="foreign-tour-price"><?= number_format($row['price'], 0) ?>đ</p>
+        <p class="foreign-tour-destination">Nơi đến:  <?= $row['location'] ?></p>
+        <button class="btn">
+           <a href="book.php?id=<?= $row['id'] ?>">
+                    ĐẶT NGAY
+                </a>
+        </button>
       </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/hcm.jpg" alt="Tour TP.HCM" />
-        <h3>Tour TP.HCM 7N6Đ</h3>
-        <p class="foreign-tour-price">32,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: TP.HCM</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/pq.jpg" alt="Tour Phú Quốc" />
-        <h3>Tour Phú Quốc 5N4Đ</h3>
-        <p class="foreign-tour-price">17,500,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Phú Quốc</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/dn.jpg" alt="Tour Đà Nẵng" />
-        <h3>Tour Đà Nẵng 6N5Đ</h3>
-        <p class="foreign-tour-price">22,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-      <div class="foreign-tour-item">
-        <img src="img/dn.jpg" alt="Tour Đà Nẵng" />
-        <h3>Tour Đà Nẵng 6N5Đ</h3>
-        <p class="foreign-tour-price">22,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-      <div class="foreign-tour-item">
-        <img src="img/dn.jpg" alt="Tour Đà Nẵng" />
-        <h3>Tour Đà Nẵng 6N5Đ</h3>
-        <p class="foreign-tour-price">22,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Cầu Rồng</p>
-        <button>ĐẶT NGAY</button>
-      </div>
+      <?php endwhile ;?>
     </div>
     <!-- Tour nước ngoài -->
     <h2 style="margin-top: 15px;"><i class="fa-solid fa-plane-departure"></i> TOUR NƯỚC NGOÀI</h2>
     <div class="foreign-tour-list">
+      <?php
+        while ($row = $tours_foreign->fetch_assoc()):
+    ?>
       <div class="foreign-tour-item">
-        <img src="img/4.jpg" alt="Tour Úc" />
-        <h3>Tour Úc 7N6Đ</h3>
-        <p class="foreign-tour-price">31,500,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Sydney</p>
-        <button>ĐẶT NGAY</button>
+        <img src="<?= $row['image_url'] ?>" alt="Tour Hà Nội" />
+        <h3><?= $row['name'] ?></h3>
+        <p class="foreign-tour-price"><?= number_format($row['price'], 0) ?>đ</p>
+        <p class="foreign-tour-destination">Nơi đến:  <?= $row['location'] ?></p>
+        <button class="btn">
+           <a href="book.php?id=<?= $row['id'] ?>">
+                    ĐẶT NGAY
+                </a>
+        </button>
       </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/3.jpg" alt="Tour Pháp" />
-        <h3>Tour Pháp 7N6Đ</h3>
-        <p class="foreign-tour-price">32,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Paris</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/1.jpg" alt="Tour Hàn Quốc" />
-        <h3>Tour Hàn Quốc 5N4Đ</h3>
-        <p class="foreign-tour-price">17,500,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Seoul</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-
-      <div class="foreign-tour-item">
-        <img src="img/2.jpg" alt="Tour Nhật Bản" />
-        <h3>Tour Nhật Bản 6N5Đ</h3>
-        <p class="foreign-tour-price">22,000,000đ</p>
-        <p class="foreign-tour-destination">Nơi đến: Tokyo, Kyoto</p>
-        <button>ĐẶT NGAY</button>
-      </div>
-    </div>
+      <?php endwhile ;?>
   </div>
   <!-- Phần dịch vụ -->
   <div class="our-services" id="service">
