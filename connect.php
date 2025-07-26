@@ -8,7 +8,7 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
 if (!$conn) {
-  die("Kết nối thất bại: " . mysqli_connect_error());
+  die("Kết nối không thành công: " . mysqli_connect_error());
 }
 // echo "Connected successfully";
 ?>
