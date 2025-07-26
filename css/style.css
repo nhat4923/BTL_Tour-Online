@@ -93,6 +93,9 @@ nav a {
   margin-bottom: 20px;
   text-align: center;
 }
+.intro-text {
+  text-align: center;
+}
 
 .destinations-container {
   margin-top: 10px;
