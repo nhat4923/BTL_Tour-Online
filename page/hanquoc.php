@@ -91,7 +91,7 @@ nav a {
 
 .title h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 55px;
 }
 .container {
     width: 80%;
@@ -134,7 +134,7 @@ nav a {
     border-radius: 3px;
         }
 
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -143,30 +143,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Ẩn hết dữ liệu khi ấn vào các địa điểm */
+.attractive-destinations ,.intro-section ,.foreign-tour-section ,.foreign-tour-list,.our-services, footer,.footer-content {
+    display: none;
+}
     </style>
  </style>
 <body>
-    <header class="navbar">
-      <div class="logo-header">
-        <div class="logo">VNTravel.vn</div>
-        <nav>
-          <a href="../index.php">Trang chủ</a>
-          <a href="#introduce">Giới thiệu</a>
-          <a href="#tourTravel">Các tour du lịch</a>
-          <a href="#service">Dịch vụ</a>
-          <a href="#">Liên hệ</a>
+     <nav>
+          <a href="index.php">Trang chủ</a>
+          <a href="index.php?page_layout=introduce">Giới thiệu</a>
+          <a href="index.php?page_layout=tourTravel">Các tour du lịch</a>
+          <a href="index.php?page_layout=service">Dịch vụ</a>
+          <a href="index.php">Liên hệ</a>
         </nav>
-      </div>
-      <div class="icons">
-        <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-        <i class="search fa-solid fa-magnifying-glass"></i>
-        <i class="bell fa-solid fa-bell"></i>
-        <div class="register">
-          <a href="/manager/login.php">Đăng nhập</a>
-          <a href="/manager/register.php">Đăng kí</a>
-        </div>
-      </div>
-    </header>
      <div class="title">
         <h1>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</h1>
     </div>
@@ -207,9 +197,9 @@ footer {
         </section>
     </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2025 Khám phá Hàn Quốc. Mọi quyền được bảo lưu.</p>
-    </footer>
+    </div>
     <script>
         var chedo = true;
 

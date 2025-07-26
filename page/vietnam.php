@@ -38,7 +38,7 @@
   background-color: #ffffff;    
   color: #000000;                               
   position: fixed;              
-  width: 97%;   
+  width: 100%;   
   top: 0;              
   z-index: 1;                   
 }
@@ -91,7 +91,7 @@ nav a {
 
 .title h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 55px;
 }
 .container {
     width: 80%;
@@ -135,7 +135,7 @@ nav a {
         border-radius: 3px;
     }
 
-    footer {
+    .footer {
         background-color: #333;
         color: white;
         text-align: center;
@@ -144,30 +144,13 @@ nav a {
         bottom: 0;
         width: 100%;
   }
+  /* Ẩn hết dữ liệu khi ấn vào các địa điểm */
+.attractive-destinations ,.intro-section ,.foreign-tour-section ,.foreign-tour-list,.our-services, footer,.footer-content {
+    display: none;
+}
     </style>
  </style>
 <body>
-    <header class="navbar">
-      <div class="logo-header">
-        <div class="logo">VNTravel.vn</div>
-        <nav>
-          <a href="../index.php">Trang chủ</a>
-          <a href="#introduce">Giới thiệu</a>
-          <a href="#tourTravel">Các tour du lịch</a>
-          <a href="#service">Dịch vụ</a>
-          <a href="#">Liên hệ</a>
-        </nav>
-      </div>
-      <div class="icons">
-        <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell"></i>
-        <div class="register">
-          <a href="/manager/login.php">Đăng nhập</a>
-          <a href="/manager/register.php">Đăng kí</a>
-        </div>
-      </div>
-    </header>
      <div class="title">
         <h1>Việt Nam: Đất Nước, Con Người và Văn Hóa</h1>
     </div>
@@ -206,9 +189,9 @@ nav a {
         </section>
     </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2025 Khám phá Việt Nam. Mọi quyền được bảo lưu.</p>
-    </footer>
+    </div>
     <script>
         var chedo = true;
 

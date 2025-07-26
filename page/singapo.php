@@ -83,7 +83,7 @@ nav a {
 }
 .title {
     margin-top: 69px;
-     background-color: #27c141;
+    background-color: #27c141;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -91,51 +91,51 @@ nav a {
 
 .title h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 55px;
 }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
 
-        .section {
-            background-color: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+.section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        .section h2 {
-            color: #008000;
-            border-bottom: 2px solid #008000;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+.section h2 {
+    color: #008000;
+    border-bottom: 2px solid #008000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
 
-        .section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 
-        .section ul {
-            list-style: none;
-            padding: 0;
-        }
+.section ul {
+    list-style: none;
+    padding: 0;
+}
 
-        .section ul li {
-            background: #f0f8ff;
-            margin-bottom: 8px;
-            padding: 10px;
-            border-left: 5px solid #EE2737; 
-            border-radius: 3px;
-        }
+.section ul li {
+    background: #f0f8ff;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid #EE2737; 
+    border-radius: 3px;
+}
 
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -144,30 +144,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Ẩn hết dữ liệu khi ấn vào các địa điểm */
+.attractive-destinations ,.intro-section ,.foreign-tour-section ,.foreign-tour-list,.our-services, footer,.footer-content {
+    display: none;
+}
     </style>
  </style>
 <body>
-    <header class="navbar">
-      <div class="logo-header">
-        <div class="logo">VNTravel.vn</div>
-        <nav>
-          <a href="../index.php">Trang chủ</a>
-          <a href="#introduce">Giới thiệu</a>
-          <a href="#tourTravel">Các tour du lịch</a>
-          <a href="#service">Dịch vụ</a>
-          <a href="#">Liên hệ</a>
-        </nav>
-      </div>
-      <div class="icons">
-        <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-        <i class="search fa-solid fa-magnifying-glass"></i>
-        <i class="bell fa-solid fa-bell"></i>
-        <div class="register">
-          <a href="/manager/login.php">Đăng nhập</a>
-          <a href="/manager/register.php">Đăng kí</a>
-        </div>
-      </div>
-    </header>
      <div class="title">
          <h1>Singapore: Thành Phố Sư Tử Xanh và Sạch</h1>
     </div>
@@ -208,9 +191,9 @@ footer {
         </section>
     </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2025 Khám phá Singapore. Mọi quyền được bảo lưu.</p>
-    </footer>
+    </div>
     <script>
         var chedo = true;
 

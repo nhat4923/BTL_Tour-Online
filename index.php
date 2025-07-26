@@ -24,7 +24,7 @@
           <a href="#introduce">Giới thiệu</a>
           <a href="#tourTravel">Các tour du lịch</a>
           <a href="#service">Dịch vụ</a>
-          <a href="#">Liên hệ</a>
+          <a href="#contact">Liên hệ</a>
         </nav>
       </div>
       <div class="icons">
@@ -37,12 +37,36 @@
         </div>
       </div>
     </header>
+     <!-- chia các page layout -->
+     <?php 
+       if(isset($_GET['page_layout'])){
+        switch($_GET['page_layout']){
+          case 'vietnam':
+            include 'page/vietnam.php';
+            break;
+          case 'thailan':
+            include 'page/thailan.php';
+            break;
+          case 'trungquoc':
+            include 'page/trungquoc.php';
+            break;
+          case 'hanquoc':
+            include 'page/hanquoc.php';
+            break;
+          case 'singapo':
+            include 'page/singapo.php';
+            break;
+        };
+       }
+      
+     ?>
+     <!-- kết thúc  -->
     <!-- Phần thân trang -->
     <section class="attractive-destinations">
       <h2 class="title">Điểm đến hấp dẫn trên thế giới</h2>
       <div class="destinations-container">
         <div class="destination-card item">
-          <a href="page/vietnam.php">
+          <a href="index.php?page_layout=vietnam">
             <img src="./img/img_diadiem/vietnam.jpg" alt="Hà Nội" />
             <div class="overlay">
               <p>Việt Nam: Đất Nước, Con Người và Văn Hóa</p>
@@ -50,7 +74,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/hanquoc.php"
+          <a href="index.php?page_layout=hanquoc"
             ><img src="img/img_diadiem/du-lich-han-quoc.jpg" alt="Hàn Quốc" />
             <div class="overlay">
               <p>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</p>
@@ -58,7 +82,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/thailan.php">
+          <a href="index.php?page_layout=thailan">
             <img src="img/img_diadiem/thailan.jpeg" alt="Thái Lan" />
             <div class="overlay">
               <p>Thái Lan: Xứ Sở Chùa Vàng và Nụ Cười</p>
@@ -66,7 +90,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/trungquoc.php">
+          <a href="index.php?page_layout=trungquoc">
             <img src="img/img_diadiem/trungquoc.jpg" alt="Trung Quốc" />
             <div class="overlay">
               <p>Trung Quốc: Đất Nước Cổ Kính và Hiện Đại</p>
@@ -74,7 +98,7 @@
           </a>
         </div>
         <div class="destination-card item">
-          <a href="page/singapo.php">
+          <a href="index.php?page_layout=singapo">
             <img src="img/img_diadiem/singapo.jpeg" alt="Singapore" />
             <div class="overlay">
               <p>Singapore: Thành Phố Sư Tử Xanh và Sạch</p>
@@ -217,7 +241,7 @@
     </div>
 
     <!-- Phần chân trang -->
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="footer-content">
         <div class="footer-icon">
           <a href="https://www.facebook.com/" target="_blank"
