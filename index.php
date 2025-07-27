@@ -142,7 +142,7 @@
         <p class="foreign-tour-price"><?= number_format($row['price'], 0) ?>đ</p>
         <p class="foreign-tour-destination">Nơi đến:  <?= $row['location'] ?></p>
         <button class="btn">
-           <a href="book.php?id=<?= $row['id'] ?>">
+           <a href="./book_tour.php?id=<?php echo $row['id'] ?>">
                     ĐẶT NGAY
                 </a>
         </button>
@@ -161,7 +161,7 @@
         <p class="foreign-tour-price"><?= number_format($row['price'], 0) ?>đ</p>
         <p class="foreign-tour-destination">Nơi đến:  <?= $row['location'] ?></p>
         <button class="btn">
-           <a href="book.php?id=<?= $row['id'] ?>">
+           <a href="./book_tour.php?id=<?php echo $row['id'] ?>">
                     ĐẶT NGAY
                 </a>
         </button>
