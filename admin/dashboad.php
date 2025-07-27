@@ -106,7 +106,7 @@
                   <td> <img src="../<?php echo $row['image_url']; ?>" alt=""></td>
                   <td>
                     <a class='delete' href="<?php echo $row['id']; ?>">Xoá</a>
-                    <a class='update' href="<?php echo $row['id']; ?>">Cập nhật</a>
+                    <a class="update" href="update_tour.php?id=<?php echo $row['id']; ?>">Cập nhật</a>
                 </td>
 
 
