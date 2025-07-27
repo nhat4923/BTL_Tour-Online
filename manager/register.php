@@ -8,6 +8,34 @@
     <script src="/scrip.js"></script>
   </head>
   <body>
+
+  <?php
+  include('../connect.php');
+  $err='';
+  if(!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['password_again']) ){
+    $username =$_POST['username'];
+     $password =$_POST['password'];
+      $password_again =$_POST['password_again'];
+      if($password != $password_again){
+        echo "Vui lòng nhập lại mật khẩu cho đúng!";     
+      }
+      else{
+        $sql = "SELECT * FROM users WHERE username = '$username'";
+       $result= mysqli_query ($conn, $sql);
+
+       if(mysqli_num_rows($result) > 0){
+        $err= "Tên đăng nhập đã tồn tại, vui lòng chọn tên khác.";
+       }
+       else{
+         $sql_res = "INSERT INTO users (`username`, `password`, `role`) VALUES ('$username', '$password', 'user')";
+            mysqli_query($conn, $sql_res);
+            header('Location: login.php');
+       }
+      }
+  }
+  
+
+?>
     <div class="register-container">
       <form class="register-form" action="register.php" method="POST">
         <h2>Tạo tài khoản</h2>
@@ -19,18 +47,16 @@
           <label for="password">Mật khẩu</label>
           <input type="password" name="password" id="password" required />
         </div>
-       <div>
-         <select name="role" required>
-            <option value="">-- Chọn quyền --</option>
-            <option value="user">Người dùng</option>
-            <option value="admin">Quản trị viên</option>
-        </select>
+       <div class="input-group">
+          <label for=" password">Nhập lại mật khẩu</label>
+          <input type="password" name="password_again" id="password" required />       
        </div>
         <button type="submit">Đăng ký</button>
         <p class="message">
           Đã có tài khoản? <a href="../manager/login.php">Đăng nhập</a>
           <a href="../index.php">Trang chủ</a>
         </p>
+         <?php if (!empty($err)) echo "<p style='color:red;'>$err</p>"; ?>
       </form>
     </div>
   </body>

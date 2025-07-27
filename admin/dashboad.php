@@ -87,7 +87,8 @@
 
 <body>
   <h1>Admin</h1>
-  <div class="add"><a href="../admin/add_tour.php">➕ Thêm tour mới</a></div>
+   <div class="add"><a href="../admin/add_tour.php">➕ Thêm tour mới</a></div>
+   <div class="add"><a href="../index.php"> Trang chủ</a></div>
   <table>
 
     <head>

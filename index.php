@@ -1,7 +1,12 @@
 <?php
   include('connect.php');
+  session_start();
+
   $tours_vn = $conn->query("SELECT * FROM tours WHERE type = 'Trong nước' ORDER BY id DESC");
   $tours_foreign = $conn->query("SELECT * FROM tours WHERE type = 'Nước ngoài' ORDER BY id DESC");
+
+  
+
 ?>
 
 
@@ -23,6 +28,7 @@
 </head>
 
 <body>
+ 
   <!-- Phần đầu trang -->
   <header class="navbar">
     <div class="logo-header">
@@ -40,12 +46,26 @@
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-bell"></i>
       <div class="register">
-        <a href="./manager/login.php">Đăng nhập</a>
-        <a href="./manager/register.php">Đăng kí</a>
-      </div>
-    </div>
+      <?php 
+        if(isset($_SESSION['username'])) : ?>
+          Xin chào <strong><?php echo $_SESSION['username']; ?></strong>
+           <a href="history.php">Lịch sử đặt tour</a>
+            <a href="manager/logout.php">Đăng xuất</a>
+        <?php else: ?>
+            <a href="manager/login.php">Đăng nhập</a>
+            <a href="manager/register.php">Đăng kí</a>
+        <?php endif; ?>   
+        </div>             
   </header>
   <!-- chia các page layout -->
+
+  <!-- //hiện khi đăng nhập admin -->
+   <!-- <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+  <a class="btn" href="admin/dashboad.php">Trang quản trị (Admin)</a>
+<?php endif; ?> -->
+
+
+
   <?php
   if (isset($_GET['page_layout'])) {
     switch ($_GET['page_layout']) {
