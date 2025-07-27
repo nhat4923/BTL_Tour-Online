@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    dũng thêm xóa
-    dshfsisfgfh ầgadgadhh
-    ksdfjsjfskf
-</body>
-</html>
+<?php
+include('../connect.php');
+$id = $_GET['id'];
+
+$delete_sql = "DELETE FROM `tours` WHERE id=$id ";
+mysqli_query($conn, $delete_sql);
+header('location: dashboad.php');
