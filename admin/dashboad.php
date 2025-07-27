@@ -6,7 +6,6 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 30px;
       background-color: #f9f9f9;
     }
 
@@ -23,9 +22,9 @@
     }
 
     th, td {
-      padding: 12px;
+      padding: 5px;
       border: 1px solid #ddd;
-      text-align: left;
+      text-align: c;
     }
 
     th {
@@ -41,44 +40,43 @@
       width: 120px;
       height: 80px;
     }
-     .delete, .update{
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-            padding: 8px;
-          
+.delete, .update{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 8px;
+  
 
-        }
-        .delete:hover{color: white;
-            background-color: red;}
-      
-        .add{
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid black;
-            width: 200px;
-            background-color: #1dae66;
-          
-
-
-        }
-        .add a{
-            text-decoration: none;
-             color: white;
-
-        }
-         .add:hover{
-            color: white;
-            background-color: #1dae66;
-      
-
-            
-        }
+}
+.add{
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 150px;
+    background-color: #1dae66;
+}
+.add a{
+    text-decoration: none;
+      color: white;
+}
+.add:hover{
+  cursor: pointer;
+  background-color: #9cedc5ff;
+}
+.delete:hover{
+   border-radius: 10px;
+  color: white;
+  background-color: red;
+}
+.update:hover{
+  color: white;
+  border-radius: 10px;
+  background-color: #1dae66;
+}
   </style>
 </head>
 <body>
   <h1>Admin</h1>
-
          <div class="add"><a href="../admin/add_tour.php">➕ Thêm tour mới</a></div>
   <table>
     <head>
@@ -106,8 +104,6 @@
                   <td><?php echo $row['type']; ?></td>
                   <td><?php echo  number_format($row['price']); ?> VNĐ</td>
                   <td> <img src="../<?php echo $row['image_url']; ?>" alt=""></td>
-                  
-               
                   <td>
                     <a class='delete' href="<?php echo $row['id']; ?>">Xoá</a>
                     <a class='update' href="<?php echo $row['id']; ?>">Cập nhật</a>
