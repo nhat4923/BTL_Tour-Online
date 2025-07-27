@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
+    <?php
+    include('../connect.php');
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+    $userName = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM `users` WHERE username = '$userName' AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        session_start();
+        $user = mysqli_fetch_assoc($result);
+        $_SESSION["username"] = $userName;
+        $_SESSION["role"] = $user["role"];
+
+        // Phân quyền và điều hướng
+        if ($user['role'] == 'admin') {
+            header('Location: ../admin/dashboad.php'); // Trang quản trị
+        } else {
+            header('Location:../index.php'); // Trang người dùng
+        }
+        exit();
+    } else {
+        // Thông báo lỗi bên dưới form login
+        $error = " Tên đăng nhập hoặc mật khẩu không chính xác.";
+    }
+}
+
+    ?>
     <div class="login-container">
       <form class="login-form"  action="login.php" method="POST">
         <h2>Đăng nhập</h2>
