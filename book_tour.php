@@ -1,5 +1,10 @@
 <?php 
    include('connect.php');
+   session_start();
+   if (!isset($_SESSION['username'])) {
+    header("Location: manager/login.php");
+    exit;
+}
    $id_tour = $_GET['id'];
    $tour = "SELECT * FROM tours where id =$id_tour";
    $result = mysqli_query($conn, $tour);
@@ -18,12 +23,16 @@
             $phone = $_POST['phone'];
             $num_people = $_POST['num_people'];
             $note = $_POST['note'];
+            $user_id = $_SESSION['user_id'];
               
-            $sql = "INSERT INTO `bookings`(`tour_id`, `customer_name`, `email`, `phone`, `num_people`, `note`)
-                      VALUES ( '$id_tour','$name','$email','$phone','$num_people','$note')";
-            echo $sql;
-            // mysqli_query($conn, $sql);
-            // header('location: index.php');
+            $sql = "INSERT INTO `bookings`(`tour_id`,`user_id`, `customer_name`, `email`, `phone`, `num_people`, `note`)
+                      VALUES ( '$id_tour','$user_id', '$name','$email','$phone','$num_people','$note')";
+            mysqli_query($conn, $sql);
+            echo "<script> 
+                alert('Bạn đã đặt tour thành công');
+                window.location.href ='index.php'
+            
+            </script>";
           
         }
 ?>
@@ -34,6 +43,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đặt Tour</title>
+    <link rel="stylesheet" href="./css/book_tour.css">
 </head>
 <body>
     <h2> Đặt tour: <?php echo $row['name'] ?></h2>

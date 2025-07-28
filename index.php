@@ -1,7 +1,6 @@
 <?php
   include('connect.php');
   session_start();
-
   $tours_vn = $conn->query("SELECT * FROM tours WHERE type = 'Trong nước' ORDER BY id DESC");
   $tours_foreign = $conn->query("SELECT * FROM tours WHERE type = 'Nước ngoài' ORDER BY id DESC");
 

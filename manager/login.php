@@ -19,18 +19,18 @@
     if (mysqli_num_rows($result) > 0) {
         session_start();
         $user = mysqli_fetch_assoc($result);
+        $_SESSION['user_id'] = $user['id'];
         $_SESSION["username"] = $userName;
         $_SESSION["role"] = $user["role"];
 
         // Phân quyền và điều hướng
         if ($user['role'] == 'admin') {
-            header('Location: ../admin/dashboad.php'); // Trang quản trị
+            header('Location: ../admin/dashboad.php'); 
         } else {
-            header('Location:../index.php'); // Trang người dùng
+            header('Location:../index.php'); 
         }
         exit();
     } else {
-        // Thông báo lỗi bên dưới form login
         $error = " Tên đăng nhập hoặc mật khẩu không chính xác.";
     }
 }
