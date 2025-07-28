@@ -18,7 +18,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['p
   $password_again = $_POST['password_again'];
 
   if ($password != $password_again) {
-     $err = "Vui lòng nhập lại mật khẩu cho đúng!";
+     $err = "Vui lòng nhập lại thông tin cho đúng!";
   } else {
     $sql = "SELECT * FROM users WHERE username = '$username'";
     $result = mysqli_query($conn, $sql);
