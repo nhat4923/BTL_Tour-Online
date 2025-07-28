@@ -51,10 +51,10 @@
         <p class="message">
           Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
-        <a href="../index.php">Trang chủ</a>
+        <a href="../index.php">Trang chủ</a> <br>
 
          <?php if (isset($error)) : ?>
-      <p style="color:red; font-weight:bold;"><?php echo $error; ?></p>
+      <p style="color:red; font-weight:bold; font-size:14px;"><?php echo $error; ?></p>
       <?php endif; ?>
 
       </form>
