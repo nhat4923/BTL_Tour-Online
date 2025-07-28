@@ -52,6 +52,11 @@
           Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
         <a href="../index.php">Trang chủ</a>
+
+         <?php if (isset($error)) : ?>
+      <p style="color:red; font-weight:bold;"><?php echo $error; ?></p>
+      <?php endif; ?>
+
       </form>
     </div>
   </body>
