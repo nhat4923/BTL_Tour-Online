@@ -6,158 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khám phá Hàn Quốc</title>
 </head>
- <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        /* .topbar {
-            position: fixed;
-            width: 99%;
-            top: 0;
-            background: #005bbb;
-            color: white;
-            padding: 10px;
-            text-align: right;
-            z-index: 999;
-        }
-        .topbar a {
-        color: white;
-        margin-left: 10px;
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        background-color: #ffffff;
+        color: #000000;
+        position: fixed;
+        width: 97%;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        color: rgb(58, 163, 79);
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 14px;
         text-decoration: none;
-        } */
-.navbar {
-  display: flex;                  
-  align-items: center;          
-  justify-content: space-between; 
-  padding: 15px 30px;          
-  background-color: #ffffff;    
-  color: #000000;                               
-  position: fixed;              
-  width: 97%;   
-  top: 0;              
-  z-index: 1;                   
-}
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+    }
 
-.logo-header {
-  display: flex;             
-  align-items: center;     
-}
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 
-.logo {
-  color: rgb(58, 163, 79);            
-  font-weight: bold;         
-  font-size: 24px;          
-}
+    .icons i {
+        font-size: 20px;
+        color: #000000;
+    }
 
-nav a {
-  padding: 14px;             
-  text-decoration: none;    
-  color: rgb(0, 0, 0);              
-  font-size: 14px;         
-}
+    .icons .avatar {
+        width: 30px;
+        border-radius: 4px;
+    }
 
-.icons {
-  display: flex;          
-  align-items: center;       
-  gap: 15px;                 
-}
+    .icon_img {
+        width: 30px;
+        height: 30px;
+    }
 
-.icons i {
-  font-size: 20px;         
-  color: #000000;            
-}
+    .title {
+        margin-top: 69px;
+        background-color: #00468B;
+        /* Màu xanh đậm tượng trưng cho cờ Hàn Quốc */
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+    }
 
-.icons .avatar {
-  width: 30px;               
-  border-radius: 4px;       
-}
+    .title h1 {
+        margin: 0;
+        font-size: 55px;
+    }
 
-.icon_img {
-  width: 30px;           
-  height: 30px;              
-}
-.title {
-    margin-top: 69px;
-    background-color: #00468B; /* Màu xanh đậm tượng trưng cho cờ Hàn Quốc */
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+    }
 
-.title h1 {
-    margin: 0;
-    font-size: 55px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px 0;
-}
-.section {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    .section {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.section h2 {
-     color: #CD0000; /* Màu đỏ nổi bật */
-    border-bottom: 2px solid #CD0000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+    .section h2 {
+        color: #CD0000;
+        /* Màu đỏ nổi bật */
+        border-bottom: 2px solid #CD0000;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
 
-.section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
+    .section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
 
-.section ul {
-    list-style: none;
-    padding: 0;
-}
+    .section ul {
+        list-style: none;
+        padding: 0;
+    }
 
-  .section ul li {
-    background: #e6f2ff; /* Màu xanh nhạt */
-    margin-bottom: 8px;
-    padding: 10px;
-    border-left: 5px solid #00468B; /* Đường viền xanh đậm */
-    border-radius: 3px;
-        }
+    .section ul li {
+        background: #e6f2ff;
+        /* Màu xanh nhạt */
+        margin-bottom: 8px;
+        padding: 10px;
+        border-left: 5px solid #00468B;
+        /* Đường viền xanh đậm */
+        border-radius: 3px;
+    }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* Ẩn hết dữ liệu khi ấn vào các địa điểm */
-.attractive-destinations ,.intro-section ,.foreign-tour-section ,.foreign-tour-list,.our-services, footer,.footer-content {
-    display: none;
-}
-    </style>
- </style>
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Ẩn hết dữ liệu khi ấn vào các địa điểm */
+    .attractive-destinations,
+    .intro-section,
+    .foreign-tour-section,
+    .foreign-tour-list,
+    .our-services,
+    footer,
+    .footer-content {
+        display: none;
+    }
+</style>
+</style>
+
 <body>
-     <nav>
-          <a href="index.php">Trang chủ</a>
-          <a href="index.php?page_layout=introduce">Giới thiệu</a>
-          <a href="index.php?page_layout=tourTravel">Các tour du lịch</a>
-          <a href="index.php?page_layout=service">Dịch vụ</a>
-          <a href="index.php">Liên hệ</a>
-        </nav>
-     <div class="title">
+    <nav>
+        <a href="index.php">Trang chủ</a>
+        <a href="index.php?page_layout=introduce">Giới thiệu</a>
+        <a href="index.php?page_layout=tourTravel">Các tour du lịch</a>
+        <a href="index.php?page_layout=service">Dịch vụ</a>
+        <a href="index.php">Liên hệ</a>
+    </nav>
+    <div class="title">
         <h1>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</h1>
     </div>
 
@@ -203,28 +204,28 @@ nav a {
     <script>
         var chedo = true;
 
-function doichedo() {
-    var body = document.body;
-    var icon = document.getElementById("cheDoIcon");
-    var sections = document.querySelectorAll('section')
-    if (chedo) {
-        body.style.backgroundColor = "black";
-        body.style.color = "white";
-        sections.forEach(select =>(
-            select.style.color = '#000'
-        ))
-        icon.innerHTML = "☀️";
-        chedo = false;
-    } else {
-        body.style.backgroundColor = "white";
-        body.style.color = "black";
-        sections.forEach(select =>(
-            select.style.color = '#000'
-        ))
-        icon.innerHTML = "🌙";
-        chedo = true;
-    }
-}
+        function doichedo() {
+            var body = document.body;
+            var icon = document.getElementById("cheDoIcon");
+            var sections = document.querySelectorAll('section')
+            if (chedo) {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                sections.forEach(select => (
+                    select.style.color = '#000'
+                ))
+                icon.innerHTML = "☀️";
+                chedo = false;
+            } else {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                sections.forEach(select => (
+                    select.style.color = '#000'
+                ))
+                icon.innerHTML = "🌙";
+                chedo = true;
+            }
+        }
     </script>
 </body>
 
