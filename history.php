@@ -6,9 +6,9 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 $user_id = $_SESSION['user_id'];
-$sql = " SELECT `name`, `customer_name`, `email`, `phone`, `num_people`, `note`, `booking_date` FROM `bookings` 
-  JOIN tours on tours.id = bookings.id 
-  WHERE bookings.user_id = $user_id  ";
+$sql = "SELECT tours.name, bookings.customer_name, bookings.email, bookings.phone, bookings.num_people, bookings.note, bookings.booking_date 
+        FROM bookings 
+        JOIN tours ON tours.id = bookings.tour_id WHERE bookings.user_id =$user_id ";
 
 $result = mysqli_query($conn, $sql);
 ?>
