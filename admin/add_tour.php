@@ -43,7 +43,7 @@
             }
     
             // Kiểm tra kích thước file
-            if ($_FILES["fileToUpload"]["size"] > 500000) {
+            if ($_FILES["fileToUpload"]["size"] > 2000000) {
                 echo "File quá lớn";
                 $uploadOk = 0;
             }
