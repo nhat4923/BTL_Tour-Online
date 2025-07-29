@@ -40,6 +40,12 @@
         <a href="#contact">Liên hệ</a>
       </nav>
     </div>
+    <div class="search">
+  <form method="GET" action="">
+    <input type="text" name="keyword" placeholder="Bạn muốn đi đâu?..." >
+    <button type="submit" name="page_layout" value="search">Tìm kiếm</button>
+  </form>
+    </div>
     <div class="icons">
       <button onclick="doichedo()" id="cheDoIcon">🌙</button>
       <i class="fa-solid fa-magnifying-glass"></i>
@@ -82,6 +88,9 @@
         break;
       case 'singapo':
         include 'page/singapo.php';
+        break;
+        case 'search':
+        include('search.php');
         break;
     };
   }
