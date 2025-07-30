@@ -61,7 +61,6 @@
         <?php endif; ?>   
         </div>             
   </header>
-  <!-- chia các page layout -->
 
   <!-- //hiện khi đăng nhập admin -->
    <!-- <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
@@ -69,7 +68,7 @@
 <?php endif; ?> -->
 
 
-
+ <!-- chia các page layout -->
   <?php
   if (isset($_GET['page_layout'])) {
     switch ($_GET['page_layout']) {
