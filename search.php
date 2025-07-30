@@ -12,7 +12,7 @@
       padding: 0;
     }
     .navbar{
-      padding: 15px 0;
+      padding: 10px 0;
     }
     .tour-container {
       display: flex;

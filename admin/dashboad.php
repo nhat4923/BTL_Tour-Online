@@ -24,9 +24,8 @@
 
     th,
     td {
-      padding: 5px;
+      /* padding: 4px; */
       border: 1px solid #ddd;
-      text-align: c;
     }
 
     th {
@@ -37,7 +36,9 @@
     tr:hover {
       background-color: #f1f1f1;
     }
-
+   .description{
+    width: 400px;
+   }
     img {
       width: 120px;
       height: 80px;
@@ -111,7 +112,7 @@
         <tr>
           <td><?php echo $row['ma_tour']; ?></td>
           <td><?php echo $row['name']; ?></td>
-          <td><?php echo $row['description']; ?></td>
+          <td class="description"><?php echo $row['description']; ?></td>
           <td><?php echo $row['location']; ?></td>
           <td><?php echo $row['type']; ?></td>
           <td><?php echo  number_format($row['price']); ?> VNĐ</td>

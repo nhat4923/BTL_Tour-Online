@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 0px;
+        padding: 10px 0px;
         background-color: #79e776;
         color: #000000;
         position: fixed;

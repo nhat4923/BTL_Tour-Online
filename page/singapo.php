@@ -16,7 +16,7 @@
         line-height: 1.6;
     }
     .navbar{
-        padding: 15px 0;
+        padding: 10px 0;
         background-color: #79e776;
     }
     .title {
