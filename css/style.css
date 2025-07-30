@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background-color: #ffffff;
+  background-color: #79e776;
   color: #000000;
   top: 0;
   position: fixed;
@@ -217,10 +217,9 @@ nav a {
   color: rgb(58, 163, 79);
   margin: 15px 0 5px;
 }
-.foreign-tour-item .btn a{
+.foreign-tour-item .btn a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .foreign-tour-price {
@@ -317,29 +316,25 @@ nav a {
   text-decoration: none;
   padding: 12px;
 }
-.btn{
+.btn {
   background-color: aqua;
 }
 /* css phần search */
 .search form {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+  text-align: center;
+  margin-bottom: 10px;
+}
 .search input[type="text"] {
-      padding: 10px;
-      width: 300px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-  .search   button {
-      padding: 10px 15px;
-      background: rgb(58, 163, 79);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-
-
-
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.search button {
+  padding: 10px 15px;
+  background: rgb(58, 163, 79);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

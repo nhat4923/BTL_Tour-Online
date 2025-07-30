@@ -20,11 +20,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 30px;
-        background-color: #ffffff;
+        padding: 15px 0px;
+        background-color: #79e776;
         color: #000000;
         position: fixed;
-        width: 97%;
+        width: 100%;
         top: 0;
         z-index: 1;
     }
@@ -151,13 +151,6 @@
 </style>
 
 <body>
-    <nav>
-        <a href="index.php">Trang chủ</a>
-        <a href="index.php?page_layout=introduce">Giới thiệu</a>
-        <a href="index.php?page_layout=tourTravel">Các tour du lịch</a>
-        <a href="index.php?page_layout=service">Dịch vụ</a>
-        <a href="index.php">Liên hệ</a>
-    </nav>
     <div class="title">
         <h1>Hàn Quốc: Vẻ Đẹp Truyền Thống và Sức Sống Hiện Đại</h1>
     </div>

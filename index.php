@@ -48,7 +48,6 @@
     </div>
     <div class="icons">
       <button onclick="doichedo()" id="cheDoIcon">🌙</button>
-      <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-bell"></i>
       <div class="register">
       <?php 

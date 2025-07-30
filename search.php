@@ -11,7 +11,9 @@
       margin: 0;
       padding: 0;
     }
-
+    .navbar{
+      padding: 15px 0;
+    }
     .tour-container {
       display: flex;
       flex-wrap: wrap;
@@ -116,7 +118,7 @@ if (isset($_GET['keyword'])) {
                     <h3><?php echo $row['name']; ?></h3>
                     <div class='price'><?php echo number_format($row['price'], 0, ',', '.'); ?> đ</div>
                     <div class='location'>Nơi đến: <?php echo $row['location']; ?></div>
-                    <a href='book.php' class='book-btn'>ĐẶT NGAY</a>
+                    <a href='./book_tour.php?id=<?php echo $row['id'] ?>' class='book-btn'>ĐẶT NGAY</a>
                 </div>
                 <?php
                 }?>

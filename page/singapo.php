@@ -15,59 +15,10 @@
         color: #333;
         line-height: 1.6;
     }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 30px;
-        background-color: #ffffff;
-        color: #000000;
-        position: fixed;
-        width: 97%;
-        top: 0;
-        z-index: 1;
+    .navbar{
+        padding: 15px 0;
+        background-color: #79e776;
     }
-
-    .logo-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo {
-        color: rgb(58, 163, 79);
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    nav a {
-        padding: 14px;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-size: 14px;
-    }
-
-    .icons {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .icons i {
-        font-size: 20px;
-        color: #000000;
-    }
-
-    .icons .avatar {
-        width: 30px;
-        border-radius: 4px;
-    }
-
-    .icon_img {
-        width: 30px;
-        height: 30px;
-    }
-
     .title {
         margin-top: 69px;
         background-color: #27c141;
