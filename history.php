@@ -1,10 +1,7 @@
 <?php
 include "connect.php";
 session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit;
-}
+
 $user_id = $_SESSION['user_id'];
 $sql = "SELECT bookings.id, tours.name, bookings.customer_name, bookings.email, bookings.phone, bookings.num_people, bookings.note, bookings.booking_date 
         FROM bookings 

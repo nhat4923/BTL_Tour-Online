@@ -9,10 +9,6 @@
    $tour = "SELECT * FROM tours where id =$id_tour";
    $result = mysqli_query($conn, $tour);
    $row = mysqli_fetch_assoc($result);
-    if (!$result || mysqli_num_rows($result) == 0) {
-       echo '<p>Không thấy tour cần đặt</p>';
-       exit;
-    }
     if (isset($_POST['name'])
          && isset($_POST['email'])
          && isset($_POST['phone'])
