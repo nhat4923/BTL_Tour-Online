@@ -64,7 +64,11 @@
                 $sql ="INSERT INTO `tours`( `ma_tour`, `name`, `description`, `location`, `type`, `price`, `image_url`) VALUES ('$matour','$ten_tour','$mota','$dia_diem','$loai','$gia','$target_file')";
             // echo $sql;
             mysqli_query($conn, $sql);
-            header('location: dashboad.php');
+            // header('location: dashboad.php');
+            echo "<script> 
+                alert('Bạn đã thêm tour thành công');
+                window.location.href ='dashboad.php'
+            </script>";
           
             }
         }
