@@ -87,46 +87,33 @@
 </head>
 
 <body>
-  <h1>Admin</h1>
-   <div class="add"><a href="../admin/add_tour.php">➕ Thêm tour mới</a></div>
-   <div class="add"><a href="../admin/ql_nguoi_dung.php">➕ Quản lí người dùng</a></div>
-   <div class="add"><a href="../index.php"> Trang chủ</a></div>
+  <h1>Quản lí người dùng</h1>
   <table>
 
     <head>
       <tr>
-        <th>Mã Tour</th>
-        <th>Tên</th>
-        <th>Mô tả</th>
-        <th>Địa điểm</th>
-        <th>Loại</th>
-        <th>Giá</th>
-        <th>Ảnh</th>
-        <th>Chức năng</th>
+        <th>Tên người dùng</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+        <th>Số người</th>
+        <th>Ghi chú</th>
+        <th>Ngày đặt tour</th>
+
       </tr>
       <?php
       include('../connect.php');
-      $sql = "SELECT * FROM `tours`";
+      $sql = "SELECT   `customer_name`, `email`, `phone`, `num_people`, `note`, `booking_date` FROM `bookings` JOIN users ON users.id = bookings.user_id;";
       $result = mysqli_query($conn, $sql);
       while ($row = mysqli_fetch_array($result)) {
       ?>
         <tr>
-          <td><?php echo $row['ma_tour']; ?></td>
-          <td><?php echo $row['name']; ?></td>
-          <td class="description"><?php echo $row['description']; ?></td>
-          <td><?php echo $row['location']; ?></td>
-          <td><?php echo $row['type']; ?></td>
-          <td><?php echo  number_format($row['price']); ?> VNĐ</td>
-          <td> <img src="../<?php echo $row['image_url']; ?>" alt=""></td>
-          <td>
-            <a class="delete" href="delete.php?id=<?php echo $row['id']; ?>">Xóa</a>
-            <a class="update" href="update_tour.php?id=<?php echo $row['id']; ?>">Cập nhật</a>
-          </td>
-
-
+          <td><?php echo $row['customer_name']; ?></td>
+          <td class="description"><?php echo $row['email']; ?></td>
+          <td><?php echo $row['phone']; ?></td>
+          <td><?php echo $row['num_people']; ?></td>
+          <td><?php echo $row['note']; ?> </td>
+          <td> <?php echo $row['booking_date']; ?></td>
         </tr>
-
-
       <?php
       }
       ?>
