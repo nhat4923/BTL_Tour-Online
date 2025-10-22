@@ -3,7 +3,7 @@ include "connect.php";
 session_start();
 
 $user_id = $_SESSION['user_id'];
-$sql = "SELECT bookings.id, tours.name, bookings.customer_name, bookings.email, bookings.phone, bookings.num_people, bookings.note, bookings.booking_date 
+$sql = "SELECT bookings.id, tours.name, bookings.customer_name, bookings.email, bookings.phone, bookings.num_people, bookings.note, bookings.booking_date , bookings.ngay_di
         FROM bookings 
         JOIN tours ON tours.id = bookings.tour_id 
         WHERE bookings.user_id = $user_id 
@@ -27,9 +27,7 @@ $result = mysqli_query($conn, $sql);
     padding: 6px 12px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-   
-   
+    font-weight: bold; 
 }
 
 a.delete:hover {
@@ -49,7 +47,8 @@ a.delete:hover {
             <th>Số điện thoại</th>
             <th>Số người</th>
             <th>Ghi chú</th>
-            <th>Thời gian và ngày đặt </th>
+            <th>Ngày đặt</th>
+            <th>Ngày và thời gian đi </th>
             <th>Chức năng</th>
         </tr>
         <?php while ($row = mysqli_fetch_array($result)) {
@@ -62,6 +61,7 @@ a.delete:hover {
                 <td><?php echo $row['num_people'] ?></td>
                 <td><?php echo $row['note'] ?></td>
                 <td><?php echo $row['booking_date'] ?></td>
+                <td><?php echo $row['ngay_di'] ?></td>
                 <td><a class="delete" href="delete_booking.php?id=<?= $row['id'] ?>">Huỷ Tour</a></td>
 
             </tr>

@@ -110,20 +110,20 @@ $row = mysqli_fetch_array($result);
             <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
         </div>
         <div><p>Mã Tour</p>
-            <input type="text" name="ma_tour" id="" value="<?php echo $row['ma_tour'] ?>">
+            <input type="text" name="ma_tour" id="" value="<?php echo $row['ma_tour'] ?>" required>
         </div>
          <div><p>Tên Tour</p>
-            <input type="text" name="name_tour" id="" value="<?php echo $row['name'] ?>">
+            <input type="text" name="name_tour" id="" value="<?php echo $row['name'] ?>"required>
         </div>
         <div><p>Mô tả</p>
-            <input type="text" name="description" id="" value="<?php echo $row['description'] ?>">
+            <input type="text" name="description" id="" value="<?php echo $row['description'] ?>"required>
         </div>
         <div><p>Địa điểm</p>
-            <input type="text" name="location" id="" value="<?php echo $row['location'] ?>" >
+            <input type="text" name="location" id="" value="<?php echo $row['location'] ?>" required>
         </div>
         
         <div><p>Giá</p>
-             <input type="number" name="price" value="<?php echo $row['price'] ?>">
+             <input type="number" name="price" value="<?php echo $row['price'] ?>"required>
         </div>
         <div>
     <p>Ảnh hiện tại</p>

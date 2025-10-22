@@ -26,6 +26,7 @@ td {
 }
 
 th {
+  text-align: center;
   background-color: #3aa34f;
   color: white;
 }
